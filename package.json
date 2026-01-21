@@ -1,0 +1,49 @@
+{
+  "name": "fireapi-webguard-next",
+  "version": "1.0.0",
+  "description": "FireAPI WebGuard for Next.js — protect your Next.js apps with admin-controlled lock screens, downtime alerts, and site access management.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "dev": "tsup src/index.ts --watch --dts --format esm,cjs --out-dir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "next": ">=13.0.0",
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "@types/react": "^19.2.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.6.3"
+  },
+  "keywords": [
+    "fireapi",
+    "webguard",
+    "nextjs",
+    "react",
+    "security",
+    "access-control",
+    "site-protection",
+    "admin-tools",
+    "maintenance-mode",
+    "website-lock",
+    "fireapi-security"
+  ],
+  "author": "FireAPI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FireAPI-dot-io/fireapi-webguard-next"
+  },
+  "bugs": {
+    "url": "https://github.com/FireAPI-dot-io/fireapi-webguard-next/issues"
+  },
+  "homepage": "https://github.com/FireAPI-dot-io/fireapi-webguard-next"
+}
